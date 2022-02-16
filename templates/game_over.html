@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/css/index.css">
+        <title>TicTacToe</title>
+    </head>
+    <body>
+        <br>
+        <div class="game-board">
+            <div class="box"><form ><button name = 'c.00' type="submit">{{ board[0][0] }}</button></form></div>
+            <div class="box"><form ><button name = 'c.01' type="submit">{{ board[0][1] }}</button></form></div>
+            <div class="box"><form ><button name = 'c.02' type="submit">{{ board[0][2] }}</button></form></div>
+
+            <div class="box"><form ><button name = 'c.10' type="submit">{{ board[1][0] }}</button></form></div>
+            <div class="box"><form ><button name = 'c.11' type="submit">{{ board[1][1] }}</button></form></div>
+            <div class="box"><form ><button name = 'c.12' type="submit">{{ board[1][2] }}</button></form></div>
+
+            <div class="box"><form ><button name = 'c.20' type="submit">{{ board[2][0] }}</button></form></div>
+            <div class="box"><form ><button name = 'c.21' type="submit">{{ board[2][1] }}</button></form></div>
+            <div class="box"><form ><button name = 'c.22' type="submit">{{ board[2][2] }}</button></form></div>
+                
+        </div>
+        <br>
+        <center>
+            <b style = "font-size: 40px;">{% if winner == 'X' %}WINNER IS X{%elif winner == 'O'%}WINNER IS O{%else%}GAME DRAWN{%endif%}</b>
+            <br><br>
+            <form action = '/' method = 'get'>
+                <button class="game_button" type = "submit" style = "width: 200px; height: 30px; font-size: 20px;"> REPLAY </button>
+            </form>
+        </center>
+    </body>
+
+</html>

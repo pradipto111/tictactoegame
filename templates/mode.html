@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TicTacToe</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+        <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                font-size: 30px;
+            }
+            button{
+                height: 100px;
+                width: 400px;
+                font-size: 30px;
+                background-color: aquamarine;
+            }
+            button:hover{
+                background-color: greenyellow;
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <img src="static/tictactoe.png">
+        <br><br>
+        <form method = 'post' action = '/newgame'>
+            <p>Choose X or O (X always goes first)</p>
+            <input type="radio" id = "player1" name="player" value="X">
+            <label for="player1">X</label>
+            <input type="radio" id="player2" name="player" value="O">
+            <label for="player2">O</label><br><br>
+            <button class="game_button" type="submit">Continue</button>
+        </form>
+        </center>
+    </body>
+
+</html>

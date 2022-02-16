@@ -1,0 +1,42 @@
+.game-board
+{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #2c3e50;
+  border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.box
+{
+  border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button{
+    height: 150px;
+    width: 150px;
+    font-size: 90px;
+}
+.game_button:hover{
+    background-color: greenyellow;
+    transform: scale(1.2);
+}
+
+.game_button{
+    display: inline-block;
+    border-radius: 50px;
+    background-color: aquamarine;
+}
